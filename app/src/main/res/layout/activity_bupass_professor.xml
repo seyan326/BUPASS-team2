@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:maxWidth="35dp"
+        android:maxHeight="35dp"
+        android:src="@drawable/left_arrow"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="BU Pass"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/attendance_check"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="출석체크"
+        android:drawableRight="@drawable/baseline_event_available_black_36"
+        android:textSize="30sp"
+        />
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:layout_width="300dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:src="@drawable/buimg" />
+
+</LinearLayout>
