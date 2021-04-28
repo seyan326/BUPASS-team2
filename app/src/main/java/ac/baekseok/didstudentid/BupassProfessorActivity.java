@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
@@ -11,6 +12,7 @@ import androidx.annotation.Nullable;
 public class BupassProfessorActivity extends Activity {
 
     ImageButton back;
+    Button attendance_check;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,6 +20,7 @@ public class BupassProfessorActivity extends Activity {
         setContentView(R.layout.activity_bupass_professor);
 
         back=(ImageButton)findViewById(R.id.back);
+        attendance_check=(Button)findViewById(R.id.attendance_check);
 
 
 
@@ -29,5 +32,14 @@ public class BupassProfessorActivity extends Activity {
                 finish();
             }
         });
+
+        attendance_check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ClassWeekProfessor.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

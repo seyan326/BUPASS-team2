@@ -31,7 +31,21 @@ public class MainActivity extends SignUp {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor cursor;
+                String email = s_email.getText().toString();
+                String password = s_pwd1.getText().toString();
+                if (email.equals("") || password.equals("")){
+                    Toast.makeText(getApplicationContext(), "잘못입력하였습니다. 이메일과 비밀번호를 입력하세요", Toast.LENGTH_SHORT).show();
+                }else if(email.equals("professor@bu.ac.kr")|| password.equals("0000")){
+                    Intent intent = new Intent(getApplicationContext(), BupassProfessorActivity.class);
+                    startActivityForResult(intent, 1);
+                    finish();
+                } else{
+                    Intent intent = new Intent(getApplicationContext(), BupassStudantActivity.class);
+                    intent.putExtra("tjdydwns123@bu.ac.kr", email);
+                    startActivityForResult(intent, 1);
+                    finish();
+                }
+            /*    Cursor cursor;
                 sqlDB=myHelper.getReadableDatabase();
 
                 cursor = sqlDB.rawQuery("SELECT * FROM SignUp_info", null);
@@ -69,7 +83,7 @@ public class MainActivity extends SignUp {
                 if (EFlag==0 && PwdFlag==0){
                     Toast.makeText(getApplicationContext(), "이메일이 잘못되었거나. 비회원입니다.", Toast.LENGTH_LONG).show();
 
-                }
+                }*/
             }
         });
 
