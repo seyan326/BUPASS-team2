@@ -114,9 +114,11 @@
                 android:src="@drawable/baseline_face_black_48"
                 />
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/baseline_qr_code_2_black_48"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/qrcode"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
                 />
         </LinearLayout>
         <Button

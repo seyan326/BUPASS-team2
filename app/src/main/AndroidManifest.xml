@@ -25,7 +25,7 @@
         <activity android:name=".ClassDitailsProfessorActivity"/>
         <activity android:name=".ClassDitailsStudantsActivity"/>
         <activity android:name=".ClassWeekProfessor"/>
-        <activity android:name=".StuantIDCardActivity"/>
+        <activity android:name=".StudantIDCardActivity"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

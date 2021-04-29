@@ -33,7 +33,7 @@ public class BupassStudantActivity extends Activity {
         studant_Id_Card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), StuantIDCardActivity.class);
+                Intent intent = new Intent(getApplicationContext(), StudantIDCardActivity.class);
                 startActivity(intent);
             }
         });
