@@ -34,7 +34,7 @@ public class ClassWeekProfessor extends Activity {
         week_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ClassDitailsProfessorActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ClassDetailsProfessorActivity.class);
                 startActivity(intent);
             }
         });

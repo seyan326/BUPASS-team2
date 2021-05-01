@@ -22,14 +22,14 @@
         </activity>
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".SignUp"/>
-        <activity android:name=".BupassStudantActivity"/>
-        <activity android:name=".AtendanceCheckStudantActivity"/>
+        <activity android:name=".BupassStudentActivity"/>
+        <activity android:name=".AttendanceCheckStudentActivity"/>
         <activity android:name=".AttendanceCheckProfessorActivity"/>
         <activity android:name=".BupassProfessorActivity"/>
-        <activity android:name=".ClassDitailsProfessorActivity"/>
-        <activity android:name=".ClassDitailsStudantsActivity"/>
+        <activity android:name=".ClassDetailsProfessorActivity"/>
+        <activity android:name=".ClassDetailsStudentsActivity"/>
         <activity android:name=".ClassWeekProfessor"/>
-        <activity android:name=".StudantIDCardActivity"/>
+        <activity android:name=".StudentIDCardActivity"/>
         <activity android:name=".ScanQR"/>
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>

@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
 
-public class AtendanceCheckStudantActivity extends Activity{
+public class AttendanceCheckStudentActivity extends Activity{
     ImageButton back;
     Button scanQR;
     @Override
@@ -23,7 +23,7 @@ public class AtendanceCheckStudantActivity extends Activity{
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),BupassStudantActivity.class);
+                Intent intent = new Intent(getApplicationContext(), BupassStudentActivity.class);
                 startActivity(intent);
                 finish();
             }
@@ -31,7 +31,7 @@ public class AtendanceCheckStudantActivity extends Activity{
 
         scanQR.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(AtendanceCheckStudantActivity.this, ScanQR.class);
+                Intent intent = new Intent(AttendanceCheckStudentActivity.this, ScanQR.class);
                 startActivity(intent);
             }
         });

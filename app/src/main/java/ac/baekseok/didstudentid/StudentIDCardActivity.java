@@ -10,17 +10,15 @@ import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
-import androidx.annotation.Nullable;
 
-
-public class StudantIDCardActivity extends AppCompatActivity {
+public class StudentIDCardActivity extends AppCompatActivity {
     private ImageView iv;
     private String text;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_studant_id_card);
+        setContentView(R.layout.activity_student_id_card);
         iv = (ImageView)findViewById(R.id.qrcode);
         text = "https://www.bu.ac.kr/web/index.do";
 

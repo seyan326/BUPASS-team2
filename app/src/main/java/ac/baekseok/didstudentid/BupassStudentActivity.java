@@ -9,13 +9,13 @@ import android.widget.ImageButton;
 
 import androidx.annotation.Nullable;
 
-public class BupassStudantActivity extends Activity {
+public class BupassStudentActivity extends Activity {
     ImageButton back;
     Button studant_Id_Card, attendance_check;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bupass_studant);
+        setContentView(R.layout.activity_bupass_student);
 
         back=(ImageButton)findViewById(R.id.back);
         studant_Id_Card=(Button)findViewById(R.id.studant_Id_Card);
@@ -33,7 +33,7 @@ public class BupassStudantActivity extends Activity {
         studant_Id_Card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), StudantIDCardActivity.class);
+                Intent intent = new Intent(getApplicationContext(), StudentIDCardActivity.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,7 @@ public class BupassStudantActivity extends Activity {
         attendance_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), AtendanceCheckStudantActivity.class);
+                Intent intent = new Intent(getApplicationContext(), AttendanceCheckStudentActivity.class);
                 startActivity(intent);
             }
         });

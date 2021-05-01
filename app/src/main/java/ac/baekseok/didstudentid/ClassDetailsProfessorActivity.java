@@ -5,11 +5,11 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-public class ClassDitailsStudantsActivity extends Activity {
+public class ClassDetailsProfessorActivity extends Activity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_class_ditails_s);
+        setContentView(R.layout.activity_class_details_p);
     }
 }

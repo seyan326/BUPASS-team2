@@ -1,10 +1,7 @@
 package ac.baekseok.didstudentid;
 
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -40,7 +37,7 @@ public class MainActivity extends SignUp {
                     startActivityForResult(intent, 1);
                     finish();
                 } else{
-                    Intent intent = new Intent(getApplicationContext(), BupassStudantActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), BupassStudentActivity.class);
                     intent.putExtra("tjdydwns123@bu.ac.kr", email);
                     startActivityForResult(intent, 1);
                     finish();
