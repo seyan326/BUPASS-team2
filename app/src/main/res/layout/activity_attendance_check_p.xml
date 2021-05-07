@@ -53,11 +53,11 @@
                 android:padding="10dp">
 
                 <Button
-                    android:id="@+id/p_class"
+                    android:id="@+id/p_class1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
-                    android:text="C언어 프로그래밍"
+                    android:text="캡스톤디자인"
                     android:background="#F4F9FE"
                     android:textSize="25sp" />
             </LinearLayout>

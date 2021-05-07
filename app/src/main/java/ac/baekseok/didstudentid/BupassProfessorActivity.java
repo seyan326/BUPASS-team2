@@ -36,7 +36,7 @@ public class BupassProfessorActivity extends Activity {
         attendance_check.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ClassWeekProfessor.class);
+                Intent intent = new Intent(getApplicationContext(), AttendanceCheckProfessorActivity.class);
                 startActivity(intent);
             }
         });
